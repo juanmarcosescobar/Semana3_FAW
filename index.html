@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio #3</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="CSS/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="https://www.google.com" class="brand-logo">
+        <img src="https://www.galileo.edu/wp-content/uploads/2023/01/Galileo-Sin-slogan-1-1536x539.png" class="logo">
+      </a>
+      <a href="#" class="brand-logo center">Tarea #3</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#formulario1" onclick="mostrarFormulario('formulario1')">Formulario 1</a></li>
+        <li><a href="#formulario2" onclick="mostrarFormulario('formulario2')">Formulario 2</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <ul>
+              <li>Nombre: Juan Marcos Escobar Ballesteros</li>
+              <li>Carnet: 20002443</li>
+              <li>Curso: Fundamentos de Aplicaciones Web</li>
+              <li>Año: 2024</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col s12 m6">
+        <div id="formulario1" class="card">
+          <div class="card-content">
+            <span class="card-title">Formulario 1</span>
+            <form>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="nombre" type="text">
+                    <label for="nombre">Nombre</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="apellido" type="text">
+                    <label for="apellido">Apellido</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input id="direccion" type="text">
+                  <label for="direccion">Dirección</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s4">
+                    <input id="cumpleanos" type="date">
+                    <label for="cumpleanos">Cumpleaños</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="carnet" type="text">
+                    <label for="carnet">Carnet</label>
+                  </div>
+                  <div class="input-field col s4">
+                    <input id="mascotas" type="text">
+                    <label for="mascotas">Mascotas</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <input id="direction" type="text" class="autocomplete">
+                  <label for="direction">Dirección (Selecciona una opción)</label>
+                </div>
+                <button class="btn waves-effect waves-light grey" type="submit" name="action">Grabar</button>
+              </form>              
+          </div>
+        </div>
+
+        <div id="formulario2" class="card" style="display: none;">
+            <div class="card-content">
+              <span class="card-title">Formulario 2</span>
+              <form>
+                <p>Genero</p>
+                <div>
+                  <label>
+                    <input name="genero" type="radio" value="masculino" />
+                    <span>Masculino</span>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input name="genero" type="radio" value="femenino" />
+                    <span>Femenino</span>
+                  </label>
+                </div>
+                
+                <p>Escoja el porcentaje de conocimiento:</p>
+                <div class="range-field">
+                  <label for="rangeHTML">HTML</label>
+                  <input type="range" id="rangeHTML" min="0" max="100" />
+                </div>
+
+                <div class="range-field">
+                  <label for="rangeCSS">CSS</label>
+                  <input type="range" id="rangeCSS" min="0" max="100" />
+                </div>
+
+                <div class="row">
+                  <div class="col s6">
+                    <button class="btn waves-effect waves-light grey" type="submit" name="action">Grabar</button>
+                  </div>
+                  <div class="col s6">
+                    <button class="btn waves-effect waves-light grey" type="button">Retornar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="JS/script.js"></script>
+</body>
+</html>
